@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bustwo"
+    tools:context=".BusHome" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUS Home"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btstart"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/sinupbutton"
+        android:layout_marginTop="100dp"
+        android:text="Start Trip" />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btviewtrip"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:background="@drawable/sinupbutton"
+        android:layout_marginTop="20dp"
+        android:text="View Trips" />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btreservation"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/sinupbutton"
+        android:layout_marginTop="20dp"
+        android:text="View Reservation" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btscanqr"
+        android:layout_width="200dp"
+        android:background="@drawable/sinupbutton"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="20dp"
+        android:text="Scan QR" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btsendnoti"
+        android:layout_width="200dp"
+        android:background="@drawable/sinupbutton"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Send Notification" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btlogout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/sinupbutton"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="20dp"
+        android:text="Logout" />
+
+</LinearLayout>

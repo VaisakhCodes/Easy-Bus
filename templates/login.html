@@ -1,0 +1,81 @@
+{% include 'publicheader.html' %}
+
+<style>
+    body {
+		
+        font-family: Arial, sans-serif; /* Choose your preferred font */
+    }
+
+    .banner {
+        background-color: #f4efef;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+		height: 900px;
+		
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+		color: #090808;
+    }
+
+    .table {
+        margin: 0 auto;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #090808;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #218838;
+    }
+</style>
+
+
+<div class="banner">
+    <div class="container">
+        
+<br><br><br><br><br><br>
+<h1>Login</h1>
+        <form method="post">
+            <table class="table" style="width: 600px; color: #251818;">
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" class="form-control" required name="username"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" class="form-control" required name="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" class="btn btn-success" name="submit" value="LOGIN"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+
+
+{% include 'footer.html' %}

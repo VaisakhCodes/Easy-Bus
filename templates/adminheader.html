@@ -1,0 +1,146 @@
+
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from epiktheme.netlify.app/html/animado-theme/demos/index2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Dec 2023 10:11:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="HTML5 Template,Animation Studio, Cartoon" />
+    <meta name="description" content="Animado - Animation & Cartoon Studio Template" />
+    <title>Animado - Animation & Cartoon Studio Template</title>
+    <!--font-awesome icons link-->
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/slick.css">
+    <!--main style file-->
+    <link rel="stylesheet" href="static/css/light-version/style.css">
+    <link rel="stylesheet" href="static/css/light-version/responsive.css">
+</head>
+
+<body id="light-mode">
+    <!-- Preloader Part Start -->
+    <div class="preloader">
+        <div class="frame">
+            <div class="center">
+                <div class="dot-1"></div>
+                <div class="dot-2"></div>
+                <div class="dot-3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Part End -->
+    <!-- HEADER AREA START -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class='navbar-brand' href='#'>EASY<b>BUS</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse menu-main" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto menu-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/adminhome">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/adminmanageplaces">Mange places</a>
+                    </li>
+                    <li class="nav-item">
+                    <a  class="nav-link" href="/adminmanageroutes"> Routes</a>
+                    </li>
+                    <li class="nav-item">
+						<a class="nav-link"  href="/adminmanagebuses"> Buses</a>
+                    </li>
+                    <li class="nav-item">
+						<a  class="nav-link"  href="/adminviewcustomers"> Customers</a>
+                    </li> 
+					<li class="nav-item">
+						<a   class="nav-link" href="/registerbus"> Manage Conductor</a>
+                    </li> 
+					<li class="nav-item">
+						<a  class="nav-link" href="/adminviewcomplaints"> Complaints</a>
+                    </li> 
+
+                	<li class="nav-item">
+						<a  class="nav-link" href="/"> Logout</a>
+                    </li> 
+
+                </ul>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Contact Us</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="input-group contact-input mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text faq-icon"><i class="fa fa-user-o" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control box-bg" placeholder="Username" aria-label="Username">
+                                </div>
+                                <div class="input-group contact-input mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text faq-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                    <input type="email" class="form-control box-bg" placeholder="Email Address" aria-label="Username">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control box-bg" placeholder="Ask a Question..." rows="3"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="dropboxx" data-dismiss="modal">Close</button>
+                            <button type="submit" class="dropboxx2" data-dismiss="modal">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Subscription</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="input-group contact-input mb-3">
+                                    <input type="email" class="form-control box-bg" placeholder="Email Address" aria-label="Username">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer mf-2">
+                            <button type="submit" class="dropboxx2" data-dismiss="modal">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER AREA ENDS -->
+
+		  {% with messages = get_flashed_messages() %}
+   {% if messages %}
+      {% for message in messages %}
+        <script> alert ("{{ message }}")</script>
+      {% endfor %}
+   {% endif %}
+{% endwith %}
